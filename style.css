@@ -1,0 +1,102 @@
+html,body{
+    background-image: url("./love.avif");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Disable scrolling */
+    height: 100%;
+    width: 100%;
+
+}
+
+.imgg{
+    height: 25px;
+    width: 25px;
+}
+.card > button:hover{
+background-color:pink;
+}
+.card > button{
+margin:30px;
+margin-right: 100px;
+width: 40px;
+height: 40px;
+}
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn2 {
+    position: absolute; /* Position it relative to the parent container */
+    left: 50px; /* Initial position */
+    top: 150px; /* Initial position */
+    transition: all 0.5s ease;
+}
+
+
+
+
+.inp{
+display: flex;
+}
+#name{
+    background-color: rgb(175, 41, 61);
+  
+}
+
+
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+    .card {
+        position: relative; /* Change to relative to fit smaller screens */
+        top: 30vmax;
+        left: auto;
+        transform: none;
+        margin: 20px; /* Add some margin */
+    }
+
+    .card > button {
+        margin: 10px;
+        width: 30px; /* Smaller button size */
+        height: 30px;
+    }
+
+    .btn2 {
+        left: auto; /* Reset position */
+        top: auto; /* Reset position */
+        bottom: 20px; /* Position from the bottom */
+        right: 20px; /* Position from the right */
+    }
+
+    #name {
+        width: 100%; /* Make the input field full width */
+    }
+
+    h3 {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h3 {
+        font-size: 14px; /* Even smaller font size for very small screens */
+    }
+
+    h1 {
+        font-size: 18px; /* Even smaller font size for very small screens */
+    }
+
+    .btn2 {
+        bottom: 10px; /* Adjust button position for very small screens */
+        right: 10px;
+    }
+}
+

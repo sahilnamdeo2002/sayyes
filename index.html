@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SAY YEs</title>
+    <script src="script.js"></script>
+</head>
+<body >
+    <div class="card">
+       <div class="inp">
+        <h3 id="namePrompt" >Enter your name baby -</h3>
+        <input   type="text" placeholder="enter your name" id="name" onkeydown="hideInputOnEnter(event) ">
+       </div>
+        <h1>WILL YOU MARRY ME....
+        <img class="imgg" src="lovecard.png" alt="">
+    </h1>
+     <!-- <input placeholder="SAY YES PLEASE" type="text"> -->
+      <button class="btn1" onclick="displayMessage()" style="color: green;">YES</button>
+      <button onclick="displayMessage('say yes')" class="btn2" style="color: red;">NO</button>
+      <div id="message" style="margin-top: 20px; font-size: 18px;"></div>
+
+    </div>
+    
+</body>
+</html>
